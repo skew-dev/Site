@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.center {
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.baffleme {
+    font-family: 'Ubuntu', sans-serif;
+    color: #424242;
+}
+
+#cursor {
+    z-index: 3;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: #424242;
+}
+
+.floaty {
+    z-index: 3;
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    color: #424242;
+}
+
+@media (min-width: 576px) {
+    .baffleme {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .baffleme {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .baffleme {
+        font-size: 3vw;
+    }
+}
+
+
+/*@media (min-width: 1200px) { ... }*/
